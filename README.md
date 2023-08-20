@@ -15,8 +15,8 @@ Create DbContext Class
 
 # STEP 3 
 Create a Connection String in appsetting.json
- "ConnectionStrings": {
-    "dbcs": "Server=servername;Database=databsaename;Trusted_Connection=true;"
+ "ConnectionStrings": {</br>
+    "dbcs": "Server=servername;Database=databsaename;Trusted_Connection=true;"</br>
   },
 
 
