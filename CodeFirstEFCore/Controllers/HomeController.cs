@@ -126,9 +126,6 @@ namespace CodeFirstEFCore.Controllers
 
         }
 
-
-
-
         public IActionResult Privacy()
         {
             return View();
