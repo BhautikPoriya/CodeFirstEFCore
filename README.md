@@ -10,8 +10,8 @@ Install 3 Package in your ASP.NET Core MVC application.
 - Microsoft.EntityFrameworkCore.Design
 
 # STEP 2
-Create Model Class
-Create DbContext Class
+- Create Model Class
+- Create DbContext Class
 
 # STEP 3 
 Create a Connection String in appsetting.json</br>
