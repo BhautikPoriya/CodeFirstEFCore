@@ -13,3 +13,11 @@ Install 3 Package in your ASP.NET Core MVC application.
 Create Model Class
 Create DbContext Class
 
+# STEP 3 
+Connection String in appsetting.json
+
+# STEP 4
+Registering Connection String in program.cs file
+
+# STEP 5 
+Add Migration and Run Migration
