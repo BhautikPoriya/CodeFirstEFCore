@@ -22,5 +22,5 @@ Registering Connection String in program.cs file
 # STEP 5 
 Add Migration and Run Migration</br>
 Go Tools -> NuGet Package Manager -> Package Manager console
-add-migration CodeFirstCreateDB and then Enter
+add-migration CodeFirstCreateDB and then Enter</br>
 update-database and then Enter
