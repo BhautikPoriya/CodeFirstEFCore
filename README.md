@@ -15,9 +15,17 @@ Create DbContext Class
 
 # STEP 3 
 Create a Connection String in appsetting.json
+ "ConnectionStrings": {
+    "dbcs": "Server=servername;Database=databsaename;Trusted_Connection=true;"
+  },
+
 
 # STEP 4
 Registering Connection String in program.cs file
+
+var provider = builder.Services.BuildServiceProvider();
+var config = provider.GetRequiredService<IConfiguration> ();
+builder.Services.AddDbContext<StudentDBContext>(item => item.UseSqlServer(config.GetConnectionString("dbcs")))
 
 # STEP 5 
 Add Migration and Run Migration</br>
