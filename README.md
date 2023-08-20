@@ -20,7 +20,7 @@ Create a Connection String in appsetting.json
 Registering Connection String in program.cs file
 
 # STEP 5 
-Add Migration and Run Migration
+Add Migration and Run Migration</br>
 Go Tools -> NuGet Package Manager -> Package Manager console
 add-migration CodeFirstCreateDB and then Enter
 update-database and then Enter
