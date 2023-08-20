@@ -6,12 +6,45 @@
 
 <h1>Index</h1>
 
+@{
+    if (TempData["insert_sucess"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Successfully :) </strong>  @TempData["insert_sucess"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div> 
+    }  
+    if (TempData["update_sucess"] != null)
+    {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Successfully :) </strong>  @TempData["update_sucess"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div> 
+    }
+    if (TempData["delete_sucess"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Successfully :) </strong>  @TempData["delete_sucess"]
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div> 
+    }
+}
+
 <p>
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -31,8 +64,11 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Name)
+                @Html.DisplayFor(modelItem => item.ID)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Gender)
             </td>
