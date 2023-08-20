@@ -6,16 +6,15 @@ namespace CodeFirstEFCore.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly StudentDBContext studentDB;
+
 
         //private readonly ILogger<HomeController> _logger;
-
         //public HomeController(ILogger<HomeController> logger)
         //{
         //    _logger = logger;
         //}
 
-
+        private readonly StudentDBContext studentDB;
         public HomeController(StudentDBContext studentDB)
         {
             this.studentDB = studentDB;
