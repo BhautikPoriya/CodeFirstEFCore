@@ -1,4 +1,4 @@
-# CodeFirstEFCore
+# CodeFirst EFCore - ASP.NET CORE MVC
 CRUD using Code First
 
 Steps for Making code first
